@@ -2,9 +2,57 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Hola Mon</title>
+  <title>Mi Página en GitHub</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #9face6);
+      text-align: center;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #2c3e50;
+    }
+    h2 {
+      font-size: 2em;
+      margin-top: 10px;
+      color: #34495e;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 10px;
+      background-color: rgba(255,255,255,0.7);
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hola Mon</h1>
+  <header>
+    <h1>Hola Mon 👋</h1>
+    <h2>¡Bienvenidos a mi página!</h2>
+  </header>
+
+  <main>
+    <p>¡Hola a todos! 🎊</p>
+    <p>Esta es mi primera página en GitHub Pages, hecha con mucho entusiasmo.</p>
+    <p>Explora, disfruta y comparte la buena vibra ✨</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Mi Página en GitHub</p>
+  </footer>
 </body>
 </html>
