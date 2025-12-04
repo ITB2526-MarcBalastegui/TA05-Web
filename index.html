@@ -5,37 +5,71 @@
   <title>Mi Página en GitHub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #74ebd5, #9face6);
-      text-align: center;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
       margin: 0;
       padding: 0;
+      color: #333;
     }
     header {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      background: url('https://picsum.photos/1200/400?random=1') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
     }
-    h1 {
-      font-size: 3em;
+    header h1 {
+      font-size: 4em;
       margin: 0;
-      color: #2c3e50;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
     }
-    h2 {
+    header h2 {
       font-size: 2em;
       margin-top: 10px;
-      color: #34495e;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
-    p {
-      font-size: 1.2em;
+    main {
+      padding: 40px;
+      text-align: center;
+    }
+    main p {
+      font-size: 1.3em;
       margin: 20px 0;
     }
+    .love {
+      font-size: 2em;
+      color: #e74c3c;
+      font-weight: bold;
+      margin: 40px 0;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    .gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
     footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
       margin-top: 40px;
-      padding: 10px;
-      background-color: rgba(255,255,255,0.7);
-      font-size: 0.9em;
     }
   </style>
 </head>
@@ -49,10 +83,21 @@
     <p>¡Hola a todos! 🎊</p>
     <p>Esta es mi primera página en GitHub Pages, hecha con mucho entusiasmo.</p>
     <p>Explora, disfruta y comparte la buena vibra ✨</p>
+
+    <div class="love">💖 Te amo Javichu 💖</div>
+
+    <section class="gallery">
+      <img src="https://picsum.photos/300/200?random=2" alt="Imagen divertida">
+      <img src="https://picsum.photos/300/200?random=3" alt="Imagen colorida">
+      <img src="https://picsum.photos/300/200?random=4" alt="Imagen inspiradora">
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 Mi Página en GitHub</p>
+    <p>© 2025 Mi Página en GitHub | Creada con ❤️ y entusiasmo</p>
   </footer>
+</body>
+</html>
+
 </body>
 </html>
