@@ -2,17 +2,17 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Mi Página en GitHub</title>
+  <title>Página Random de Pruebas</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
       margin: 0;
       padding: 0;
+      background: #f4f4f9;
       color: #333;
     }
     header {
-      background: url('https://picsum.photos/1200/400?random=1') no-repeat center center;
+      background: url('https://picsum.photos/1200/400?random=10') no-repeat center center;
       background-size: cover;
       color: white;
       text-align: center;
@@ -28,12 +28,26 @@
       margin-top: 10px;
       text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
+    nav {
+      background: #2c3e50;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f39c12;
+    }
     main {
       padding: 40px;
       text-align: center;
     }
     main p {
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin: 20px 0;
     }
     .love {
@@ -64,6 +78,19 @@
     .gallery img:hover {
       transform: scale(1.05);
     }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+    .button:hover {
+      background: #2980b9;
+    }
     footer {
       background: #2c3e50;
       color: white;
@@ -76,28 +103,39 @@
 <body>
   <header>
     <h1>Hola Mon 👋</h1>
-    <h2>¡Bienvenidos a mi página!</h2>
+    <h2>¡Bienvenidos a mi página random!</h2>
   </header>
 
+  <nav>
+    <a href="#bienvenida">Bienvenida</a>
+    <a href="#galeria">Galería</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
   <main>
-    <p>¡Hola a todos! 🎊</p>
-    <p>Esta es mi primera página en GitHub Pages, hecha con mucho entusiasmo.</p>
-    <p>Explora, disfruta y comparte la buena vibra ✨</p>
+    <section id="bienvenida">
+      <p>¡Hola a todos! 🎊</p>
+      <p>Esta es una página de pruebas en GitHub Pages, sin miedo y con mucha creatividad.</p>
+      <p>Explora, disfruta y comparte la buena vibra ✨</p>
+      <div class="love">💖 Te amo Javichu 💖</div>
+      <a href="#galeria" class="button">Ver la galería</a>
+    </section>
 
-    <div class="love">💖 Te amo Javichu 💖</div>
+    <section id="galeria" class="gallery">
+      <img src="https://picsum.photos/300/200?random=20" alt="Imagen divertida">
+      <img src="https://picsum.photos/300/200?random=21" alt="Imagen colorida">
+      <img src="https://picsum.photos/300/200?random=22" alt="Imagen inspiradora">
+      <img src="https://picsum.photos/300/200?random=23" alt="Imagen random">
+    </section>
 
-    <section class="gallery">
-      <img src="https://picsum.photos/300/200?random=2" alt="Imagen divertida">
-      <img src="https://picsum.photos/300/200?random=3" alt="Imagen colorida">
-      <img src="https://picsum.photos/300/200?random=4" alt="Imagen inspiradora">
+    <section id="contacto">
+      <p>¿Quieres saludar? Haz clic en el botón 👇</p>
+      <a href="#" class="button" onclick="alert('¡Hola! Gracias por visitar mi página 🎉')">Salúdame</a>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Mi Página en GitHub | Creada con ❤️ y entusiasmo</p>
+    <p>© 2025 Mi Página Random en GitHub | Creada con ❤️ y entusiasmo</p>
   </footer>
-</body>
-</html>
-
 </body>
 </html>
